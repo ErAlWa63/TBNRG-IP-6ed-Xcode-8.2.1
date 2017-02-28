@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710D30821E65BD6800817B7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710D30811E65BD6800817B7B /* MapKit.framework */; };
+		710D30841E65BE6100817B7B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D30831E65BE6100817B7B /* MapViewController.swift */; };
 		7133889B1E6322C400FC46DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7133889A1E6322C400FC46DE /* AppDelegate.swift */; };
-		7133889D1E6322C400FC46DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7133889C1E6322C400FC46DE /* ViewController.swift */; };
 		713388A01E6322C400FC46DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7133889E1E6322C400FC46DE /* Main.storyboard */; };
 		713388A21E6322C400FC46DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713388A11E6322C400FC46DE /* Assets.xcassets */; };
 		713388A51E6322C400FC46DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713388A31E6322C400FC46DE /* LaunchScreen.storyboard */; };
 		713388B01E6322C400FC46DE /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713388AF1E6322C400FC46DE /* WorldTrotterTests.swift */; };
 		713388BB1E6322C400FC46DE /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713388BA1E6322C400FC46DE /* WorldTrotterUITests.swift */; };
+		713388CB1E655ECB00FC46DE /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713388CA1E655ECB00FC46DE /* ConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		710D30811E65BD6800817B7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		710D30831E65BE6100817B7B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		713388971E6322C400FC46DE /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7133889A1E6322C400FC46DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7133889C1E6322C400FC46DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7133889F1E6322C400FC46DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		713388A11E6322C400FC46DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		713388A41E6322C400FC46DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		713388B61E6322C400FC46DE /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		713388BA1E6322C400FC46DE /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		713388BC1E6322C400FC46DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		713388CA1E655ECB00FC46DE /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710D30821E65BD6800817B7B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710D30801E65BD6800817B7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				710D30811E65BD6800817B7B /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7133888E1E6322C400FC46DE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 				713388AE1E6322C400FC46DE /* WorldTrotterTests */,
 				713388B91E6322C400FC46DE /* WorldTrotterUITests */,
 				713388981E6322C400FC46DE /* Products */,
+				710D30801E65BD6800817B7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +111,10 @@
 		713388991E6322C400FC46DE /* WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
+				713388CA1E655ECB00FC46DE /* ConversionViewController.swift */,
 				7133889A1E6322C400FC46DE /* AppDelegate.swift */,
-				7133889C1E6322C400FC46DE /* ViewController.swift */,
 				7133889E1E6322C400FC46DE /* Main.storyboard */,
+				710D30831E65BE6100817B7B /* MapViewController.swift */,
 				713388A11E6322C400FC46DE /* Assets.xcassets */,
 				713388A31E6322C400FC46DE /* LaunchScreen.storyboard */,
 				713388A61E6322C400FC46DE /* Info.plist */,
@@ -262,7 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7133889D1E6322C400FC46DE /* ViewController.swift in Sources */,
+				713388CB1E655ECB00FC46DE /* ConversionViewController.swift in Sources */,
+				710D30841E65BE6100817B7B /* MapViewController.swift in Sources */,
 				7133889B1E6322C400FC46DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +530,7 @@
 				713388C11E6322C400FC46DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		713388C21E6322C400FC46DE /* Build configuration list for PBXNativeTarget "WorldTrotterTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +539,7 @@
 				713388C41E6322C400FC46DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		713388C51E6322C400FC46DE /* Build configuration list for PBXNativeTarget "WorldTrotterUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +548,7 @@
 				713388C71E6322C400FC46DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
